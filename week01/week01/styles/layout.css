@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: serif;
+}
+header {
+    background: navy;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    width: auto; 
+}
+header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;  
+}
+body {
+    background-color: slategrey;
+}
+.div-main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    min-height: 250px;
+    padding: 10px
+}
+aside {
+    background-color: white;
+}
+footer {
+    background-color: navy;
+    color: white;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    
+
+}

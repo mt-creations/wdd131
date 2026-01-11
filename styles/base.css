@@ -5,7 +5,9 @@
     
     
 }
-
+header {
+    padding: 1px;
+}
 header span {
     display: block;
     text-align: center;
