@@ -58,7 +58,7 @@ main p {
     border-radius: 12px;
     padding: 15px;
 }
-.card h3 {
+.card h2 {
     margin-top: 0;
     background-color: rgb(62, 67, 143);
     color: white;
