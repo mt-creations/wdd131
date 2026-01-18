@@ -1,7 +1,6 @@
 * {
     font-family: 'roboto', sans-serif;
     font-weight: 400;
-    max-width: 32rem;
     margin: 0;
     padding: 0;
 
@@ -14,10 +13,7 @@ header {
     color: white;
     padding: .5rem;
 }
-nav {
-    max-width: 512px;
-    margin: o auto;
-}
+
 #menu {
     font-size: 1.5rem;
     border: 0;
@@ -57,14 +53,15 @@ nav {
 }
 .open a {
     display: block;
+    
 }
 .active::before {
     content: "🔆";
 }
 h1 {
     text-align: center;
-    font-size: 1.5rem;
     display: block;
+    margin: 0 auto;
 }
 .gallery {
     margin: .5rem;
@@ -74,6 +71,15 @@ h1 {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
 }
+footer {
+    padding: 1rem;
+}
+
+figure {
+    margin: 1rem;
+    text-align: center;
+}
+
 
 
 

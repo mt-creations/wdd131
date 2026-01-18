@@ -1,15 +1,32 @@
 @media screen and (min-width: 513px) {
 
 
-    header div {
+    .header-content {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0 auto;
+    }
+    nav {
+        margin-left: auto;
     }
     main {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+    .navigation {
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .navigation a {
+        display: block;
+        padding: 0;
+    }
+    .gallery {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        flex
+        gap: 1rem;
     }
+
+
+
 }
