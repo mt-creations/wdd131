@@ -1,0 +1,15 @@
+@media screen and (min-width: 513px) {
+
+
+    header div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        flex
+    }
+}
