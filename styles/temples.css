@@ -30,7 +30,9 @@ header {
 #menu.open::before {
     content: "❎";
 }
-
+nav {
+    display: flex;
+}
 .navigation {
     display: flex;
     flex-direction: column;
@@ -63,37 +65,19 @@ h1 {
     display: block;
     margin: 0 auto;
 }
-.gallery {
-    margin: .5rem;
-}
+
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
-}
-footer {
-    padding: 1rem;
 }
 
 figure {
     margin: 1rem;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
     display: block;
     text-align: center;
+    padding: 1rem;
 }
