@@ -21,5 +21,5 @@ if (temperature <= 10 && windSpeed > 4.8) {
 }
 
 else {
-    document.getElementById("windChill").textContent = `"N/A"`;
+    document.getElementById("windChill").textContent = "N/A";
 }

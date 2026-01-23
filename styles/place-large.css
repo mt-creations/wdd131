@@ -13,6 +13,8 @@ main {
     font-size: large;
     border-radius: 4px;
     padding: 2.75rem 1rem 1rem;
+    border: none;
+    border-bottom: 1px solid var(--yellow);
 }
 
 .weather-box {
