@@ -3,20 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 3 assignment: Places | WDD131</title>
+    <title>WDD131 Week 3 assignment: Places</title>
     <meta name="description" content="Webpage with information about a place you live or have visited. It is the week 3 assignment for WDD131 Dynamic Web Fundamentals.">
     <meta name="author" content="Michael Thomas">
     <script src="scripts/place.js" defer></script>
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 1001px)">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Venezuela</h1>
+        </header>
+        <main>
             <picture>
-                <source srcset="images/hero-full.webp" media="(min-width: 1000px)">
-                <source srcset="images/hero-small.webp" media="(min-width: 550px)">
-                <img class="hero" src="images/hero-small.webp" alt="picture of Valencia Venezuela">
+                <source srcset="images/hero-full1.webp" media="(min-width: 1000px)">
+                <source srcset="images/hero-small.webp" media="(min-width: 401px)">
+                <img class="hero" src="images/caracas-flags.webp" alt="picture of Caracas Venezuela" width="400" height="300">
             </picture>
             <div class="data-box">
                 <h2>Data</h2>
@@ -46,12 +49,24 @@
                     <dd>.ve</dd>
                   </dl>
             </div>
-            <div class="wheather-box">
-
+            <div class="weather-box">
+                <h2>Weather</h2>
+                <img class="weather" src="images/weather2.svg" alt="sun and cloud icon">
+                <dl>
+                    <dt>Temperature:</dt>
+                    <dd>29 °C</dd>
+                  
+                    <dt>Conditions:</dt>
+                    <dd>Partly Cloudy</dd>
+                  
+                    <dt>Wind:</dt>
+                    <dd>5 km/h</dd>
+                  
+                    <dt>Wind Chill:</dt>
+                    <dd id="windChill"></dd>
+                  </dl> 
             </div>
-
-
-        </header>
+        </main>
         <footer>
             <p>
                 <span id="currentYear"></span>
@@ -59,7 +74,5 @@
             <p id="lastModified"></p>
         </footer>
     </div>
-        
-    
 </body>
 </html>
