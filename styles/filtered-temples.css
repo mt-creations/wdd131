@@ -7,11 +7,20 @@
 }
 
 header {
-    display: block;
-    text-align: left;
     background-color: rgb(5, 45, 82);
     color: white;
-    padding: .5rem;
+    padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header p {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 #menu {
@@ -62,14 +71,7 @@ nav {
 }
 h1 {
     text-align: center;
-    display: block;
-    margin: 0 auto;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 footer {
@@ -78,5 +80,38 @@ footer {
     padding: 1.1rem;
 }
 
-/* week04 stuff */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
 
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+}
+
+.gallery section {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+.label {
+    font-weight: 700;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: .75rem;
+}

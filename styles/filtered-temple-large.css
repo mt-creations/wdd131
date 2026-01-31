@@ -1,14 +1,7 @@
 @media screen and (min-width: 513px) {
 
-
-    .header-content {
-        display: flex;
-    }
     nav {
         margin-left: auto;
-    }
-    main {
-        display: block;
     }
     #menu {
         display: none;
@@ -23,7 +16,7 @@
     }
     .gallery {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 1rem;
     }
 
