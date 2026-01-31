@@ -1,0 +1,82 @@
+* {
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    display: block;
+    text-align: left;
+    background-color: rgb(5, 45, 82);
+    color: white;
+    padding: .5rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+#menu::before {
+    content: "☰";
+}
+#menu.open::before {
+    content: "❎";
+}
+nav {
+    display: flex;
+}
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    color: white;
+}
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+}
+.navigation a:hover {
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+.open a {
+    display: block;
+    
+}
+.active::before {
+    content: "🔆";
+}
+h1 {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 1.1rem;
+}
+
+/* week04 stuff */
+
