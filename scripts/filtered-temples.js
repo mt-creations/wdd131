@@ -101,8 +101,6 @@ const temples = [
 	}
 ];
 
-createTempleCard(temples);
-
 function createTempleCard(filteredTemples) {
 	const gallery = document.querySelector(".gallery");
 	gallery.innerHTML = "";
@@ -134,6 +132,9 @@ function createTempleCard(filteredTemples) {
 
 		gallery.appendChild(card);
 	});
+}
+
+createTempleCard(temples);
 
 document.querySelector("#home").addEventListener("click", () => {
 	createTempleCard(temples);
@@ -162,6 +163,4 @@ document.querySelector("#small").addEventListener("click", () => {
 
 	createTempleCard(smallTemples);
 });
-
-}
 
