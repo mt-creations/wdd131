@@ -3,13 +3,12 @@
 header {
     color: white;
     text-align: center;
-
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background: steelblue;
+    background-color: steelblue;
 }
 
 .container {
@@ -82,4 +81,9 @@ textarea {
     min-height: 40px;
     border-radius: 5px;
     width: 337px ;
+}
+
+footer {
+    text-align: center;
+    color: #eee;
 }
