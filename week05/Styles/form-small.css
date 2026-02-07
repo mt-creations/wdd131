@@ -1,0 +1,78 @@
+
+
+header {
+    color: white;
+    text-align: center;
+
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: steelblue;
+}
+
+.container {
+    max-width: 400px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background: lightgray;
+}
+
+.form-group, fieldset {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: .4rem;
+    
+}
+
+fieldset.rating {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+fieldset.rating label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+fieldset.rating input[type="radio"]{
+    margin-top: .3rem;
+}
+
+fieldset {
+    margin: .5rem;
+    border: 1px solid steelblue;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+legend {
+    color: rgb(8, 23, 105);
+    padding-bottom: .5rem;
+
+}
+
+.container input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: #eee;
+    border-radius: 6px;
+    font-size: large;
+    padding: .8rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.container input[type="textbox"]{
+    width: 100%;
+}
+
