@@ -7,7 +7,7 @@
     <meta name="description" content="A webpage to with a form.  The purpose of this page is to practice creating forms.">
     <meta name="author" content="Michael Thomas">
     <link rel="stylesheet" href="Styles/form-small.css">
-
+    <link rel="stylesheet" href="Styles/form-large.css">
     <script src="Scripts/form.js" defer></script>
 
 </head>
@@ -21,6 +21,7 @@
 
             <fieldset class="form-group">
                 <legend>Product Name</legend>
+                <label for="product"></label>
                 <select name="product" id="product" required>
                     <option value="" disabled selected>Choose a Product...</option>
                 </select>  
@@ -52,38 +53,41 @@
 
             <fieldset class="form-group">
                 <legend>Date of Installation</legend>
-                <label for="installDate">Date of Installation</label>
+                <label for="installDate"></label>
                 <input type="date" id="installDate" name="installDate" required>
             </fieldset>
             
             <fieldset class="form-group">
                 <legend>Which features did you find Useful in the product?<br>
                     (Check all that apply)</legend>
-                <label>
+                <label for="Durability">
                     <input type="checkbox" name="features" id="Durability" value="Durability">Durability
                 </label>
-                <label>
+                <label for="EaseOfUse">
                     <input type="checkbox" name="features" id="EaseOfUse" value="Ease of use">Ease of Use
                 </label>
-                <label>
+                <label for="Performace">
                     <input type="checkbox" name="features" id="Performance" value="Performance">Performance
                 </label>
-                <label>
+                <label for="Design">
                     <input type="checkbox" name="features" id="Design" value="Design">Design
                 </label>
             </fieldset>
 
             <fieldset class="form-group">
                 <legend>Written Review (optional)</legend>
+                <label for="review"></label>
                 <textarea name="review" id="review" rows="4"></textarea>
             </fieldset>
 
             <fieldset class="form-group">
                 <legend>Your Name (Optional)</legend>
-                <input type="text" id="username" name="username">
+                <label for="username"></label>
+                <input class="name-box" type="text" id="username" name="username">
             </fieldset>
 
             <fieldset class="form-group">
+                <label for=""></label>
                 <input type="submit" value="Post Review">
             </fieldset>
         </form>

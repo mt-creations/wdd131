@@ -73,10 +73,10 @@ input[type="submit"]{
 }
 
 input[type="text"],
-input[type="text"]
+input[type="date"]
 select,
 textarea {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: .6rem .8rem;
     min-height: 40px;
     border-radius: 5px;
@@ -87,3 +87,14 @@ footer {
     text-align: center;
     color: #eee;
 }
+
+
+select,
+input[type="date"]{
+    font-size: 1.5rem;
+}
+
+
+
+
+
