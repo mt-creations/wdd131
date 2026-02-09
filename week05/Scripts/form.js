@@ -36,9 +36,24 @@ const products = [
 
 const select = document.getElementById("product");
 
-products.forEach(product => {
-    const option = document.createElement("option");
-    option.calue = product.name;
-    option.textContent = product.name
-    select.appendChild(option);
-});
+if (select){
+    products.forEach(product => {
+        const option = document.createElement("option");
+        option.value = product.name;
+        option.textContent = product.name;
+        select.appendChild(option);
+})};
+
+//local storage
+const countDisplay = document.getElementById("reviewCount");
+
+if (countDisplay){
+    let reviewCount = localStorage.getItem("reviewCount");
+
+    reviewCount = Number(reviewCount) || 0;
+    reviewCount += 1;
+
+localStorage.setItem("reviewCount", reviewCount);
+
+countDisplay.textContent = reviewCount;
+}
