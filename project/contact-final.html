@@ -39,16 +39,59 @@
         <div>
             <h2>Contact Us</h2>
         </div>
+
         <div>
-            <p>Our company was created in 2020, however our window cleaning roots go back much further in time.  Founder Michael Thomas grew up in a window cleaning family.  He worked for his fathers company climbing ladders and making customers happy all the way back in 1999.  Working alongside his brothers he learned the value of customer service and hard work. 20 years later he decided to carry on his fathers legacy and start up his own window cleaning business.  
-            </p>
+            <form action="#" method="get" class="contact-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" name="fullName" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" name="phone" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" name="address" id="address">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">How can we help you?</label>
+                    <input type="text" name="message" id="message" required>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter" class="italic">Subscribe to monthly newsletter with coupons and limited offers</label>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactType">Type of Contact *</label>
+                    <label>
+                        <input type="radio" name="contactType" value="Question" required>Question
+                    </label>
+                    <label>
+                        <input type="radio" name="contactType" value="Comment" required>Comment
+                    </label>
+                    <label>
+                        <input type="radio" name="contactType" value="Service Request" required>Service Request
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Send My Message</button>
+                </div>
+
+
+            </form>
+        </div>
+
+        <div>
             <figure>
-                <img src="images/Thomas Bros go to Work.JPG" alt="" width="300px">
-                <figcaption>~Owner Michael Thomas and his two brothers in 2003~</figcaption>
-            </figure>
-            <figure>
-                <img src="images/20230618_140500.jpg" alt="" width="300px">
-                <figcaption>~Owner Michael Thomas still working hard in 2023~</figcaption>
+                <img src="images/service-map.webp" alt="" width="300px">
+                <figcaption>~Serving the Northern and Central Orange County areas~</figcaption>
             </figure>
         </div>
 
