@@ -31,7 +31,26 @@ h1 {
 
 h2 {
     text-align: center;
-    padding-top: 1.5rem;
+    padding: 1.5rem;
+}
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 0.5rem auto 0;
+}
+
+figure img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.history {
+    line-height: 1.6;
+    padding-bottom: 1.5rem;
 }
 
 .logo {
@@ -93,7 +112,9 @@ figure {
 
 main {
     background-color: var(--tertiary-color);
+    padding: 1rem 1.2rem;
 }
+
 
 .italic {
     font-style: italic;
@@ -141,7 +162,7 @@ fieldset {
 
 button {
     padding: .75rem;
-    background-color: var(--primary-color);
+    background-color: var(--dark-accent-color);
     color: var(--text-color);
     border: none;
     border-radius: 5px;
@@ -150,7 +171,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--dark-accent-color);
+    background-color: var(--primary-color);
 }
 
 input[type="radio"],

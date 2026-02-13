@@ -1,9 +1,13 @@
+// footer
+
 const currentYear = new Date().getFullYear();
 
 document.getElementById("currentYear").textContent = `©️${currentYear} 🌴 Michael Thomas 🌴 California`;
 
 document.getElementById("lastModified").textContent = `Last modified: ${document.lastModified}`;
 
+
+// hamburger menu
 
 const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.navigation');
@@ -12,6 +16,8 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('show');
 });
 
+
+// form
 
 const form = document.querySelector(".contact-form");
 
