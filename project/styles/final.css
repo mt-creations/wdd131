@@ -1,0 +1,102 @@
+:root {
+    --primary-color: rgb(12, 108, 172);
+    --secondary-color: rgb(27, 212, 245);
+    --tertiary-color: rgb(173, 226, 250);
+    --text-color: rgb(207, 238, 241);
+    --dark-accent-color: rgb(37, 27, 180);
+}
+
+* {
+    font-family: 'noto sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+h1 {
+    font-size: x-large;
+}
+
+h2 {
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+.logo-row {
+    text-align: center;
+    padding: .5rem;
+}
+
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    background-color: var(--dark-accent-color);
+    
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    
+}
+
+.navigation a:hover {
+    color: var(--secondary-color);
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 1rem ;
+    text-align: center;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.navigation.show {
+    display: flex;
+}
+
+figcaption {
+    text-align: center;
+}
+
+main {
+    background-color: var(--tertiary-color);
+}
+
+
+
+
+
+
+
+
+
+footer {
+    display: block;
+    text-align: center;
+    padding: 1.1rem;
+}
