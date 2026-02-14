@@ -26,20 +26,41 @@ header {
 h1 {
     font-size: x-large;
     font-weight: 700;
-    
 }
 
-h2 {
+h2, h3 {
     text-align: center;
     padding: 1.5rem;
+    font-weight: bold;
 }
+
 h2::after {
     content: "";
     display: block;
-    width: 60px;
+    width: 65px;
     height: 3px;
     background: var(--primary-color);
-    margin: 0.5rem auto 0;
+    margin: 1.5rem auto 0;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: var(--primary-color);
+    margin: 1.5rem auto 0;
+}
+
+.services {
+    text-align: center;
+    font-size: large;
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin: 1.5rem auto;
+    background-color: var(--text-color);
+    padding: 1.5rem;
 }
 
 figure img{
@@ -50,7 +71,14 @@ figure img{
 
 .history {
     line-height: 1.6;
-    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: larger;
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    margin: 1.5rem auto;
+    background-color: var(--text-color);
+    padding: 1.5rem ;
 }
 
 .logo {
@@ -68,7 +96,6 @@ figure img{
     align-items: center;
     text-align: center;
     padding: 0.5rem;
-    /* background-color: var(--dark-accent-color); */
     
 }
 
@@ -104,6 +131,11 @@ figure img{
 
 figcaption {
     text-align: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--text-color);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    padding: .25rem;
 }
 
 figure {
@@ -112,6 +144,7 @@ figure {
 
 main {
     background-color: var(--tertiary-color);
+    background: linear-gradient(to right, var(--primary-color),var(--secondary-color));
     padding: 1rem 1.2rem;
 }
 

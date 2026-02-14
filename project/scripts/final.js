@@ -48,4 +48,9 @@ form.addEventListener("submit", (event) => {
     form.innerHTML = 
         `<h2>Thank You, ${formData.name}</h2>
         <p>We received your ${formData.contactType.toLowerCase()}.  We are so happy that you reached out to us!</p>`;
+
+    // to load saved forms
+    
+        const savedData = JSON.parse(localStorage.getItem("contactSubmission"));
+        console.log(savedData.name);
 });
