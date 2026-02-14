@@ -16,6 +16,12 @@
 
 }
 
+body {
+    background-color: var(--tertiary-color);
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
 header {
     background-color: var(--primary-color);
     color: var(--text-color);
@@ -26,6 +32,7 @@ header {
 h1 {
     font-size: x-large;
     font-weight: 700;
+    color: var(--text-color);
 }
 
 h2, h3 {
@@ -58,10 +65,11 @@ h3::after {
     border: 2px solid var(--primary-color);
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    margin: 1.5rem auto;
     background-color: var(--text-color);
     padding: 1.5rem;
+    
 }
+
 
 figure img{
     width: 100%;
@@ -95,9 +103,10 @@ figure img{
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 0.5rem;
-    
+    padding: 0.5rem;   
 }
+
+
 
 .hamburger {
     background: none;
@@ -142,10 +151,13 @@ figure {
     padding-bottom: 2rem;
 }
 
+
+
 main {
     background-color: var(--tertiary-color);
     background: linear-gradient(to right, var(--primary-color),var(--secondary-color));
     padding: 1rem 1.2rem;
+    justify-items: center;
 }
 
 
